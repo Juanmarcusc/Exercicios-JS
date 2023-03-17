@@ -1,0 +1,70 @@
+<script>
+    /* 1- declare uma variável de nome weight 
+       2- que tipo de dado é a variável acima? 
+
+       3- declare uma variável e atribua valores para cada um dos
+          dados 
+            Name: String 
+            Age: Number (integer)
+            weight: Number (float)
+            isSubscribed: Boolean  
+
+       4- a variável student abaixo é de que tipo de dados? 
+        4.1 - Atribua a ela as mesmas propriedades e valores do exercício 3. 
+        4.2 - Mostre no campo a seguinte mensagem: 
+         <name> de idade <age> pesa <weight> kg.
+            atenção, substitua <name> <age> e <weight> pelos valores 
+            de cada propriedade do objeto 
+    
+        5- Declare uma variável tipo Array, de nome students e atribua a ela nenhum valor, ou seja,
+         um array null 
+    
+        6- Retribua valor para a variável acima, colocando dentro dela o objeto student da questão 4.
+        7- Coloque no console o valor da posição zero do Array acima
+        8 - Crie um novo student e coloque na posição 1 do array students
+        9 - Sem rodar o código, responda qual é a resposta do código abaixo e porque? Após a resposta 
+           rode o código abaixo e veja se você acertou 
+           
+           console.log(a)
+           var a = 1 
+
+        Answer = O resultado será undefined, pois, o var irá realizar o processo de hoisting. 
+
+        10 - e se trocarmos a variável var por let, o que acontece? 
+             Answer = irá dá um erro de reconhecimento de variável, pois, a variavel foi identificada depois do 
+             console.log */
+
+ let Weight
+ console.log(typeof Weight) // undefined 
+
+let name = "Juan"
+let age = 26
+let weight = 90.5
+isSubscribed = true
+
+let Student = {}   // Object null 
+
+let student = {
+    name: "Juan",
+    age: 26,
+    weight:  90.5,
+    isSubscribed: true 
+}
+console.log(`${student.name} de idade ${student.age} pesa ${student.weight} kg`) 
+
+ // let students = []  // Array null 
+
+ let carol = {
+    name: 'carol',
+    age: 28,
+    weight: 60.4 
+}
+
+ students = [
+    student, 
+    carol 
+]
+
+console.log(students[0])
+console.log(students[1])
+</script>
